@@ -4,7 +4,7 @@
 # Steps of service setup [Python, ubuntu server, Nginx, Unit, Flask]
 
 
-      ## Required for downloading in the virtual environment: these python libraries:
+## Required for downloading in the virtual environment: these python libraries:
     • Flask 1.1.2
     • flask_cors 3.0.9
     • numpy 1.18.5
@@ -22,15 +22,11 @@ https://unit.nginx.org/installation/#ubuntu_1804
 ### In console:
 
 ```bash
- cd /path/to/app/
-
- python3 -m venv name_of_venv
-
-source  name_of_venv/bin/activate
-
- pip install (all required libraries above)
-
- deactivate
+$cd /path/to/app/
+$python3 -m venv name_of_venv
+$source  name_of_venv/bin/activate
+$pip install (all required libraries above)
+$deactivate
 ```
 
 
