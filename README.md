@@ -1,8 +1,8 @@
-# python-flask-Unit-Nginx-service-setup-PD-tremor-classification-service-
-
+## Setup Instructıons
 
 # Steps of service setup [Python, ubuntu server, Nginx, Unit, Flask]
 
+#python #flask #Unit#Nginx #service-setup #Parkinson #tremor #classification-service-
 
 ## Required for downloading in the virtual environment: these python libraries:
     • Flask 1.1.2
