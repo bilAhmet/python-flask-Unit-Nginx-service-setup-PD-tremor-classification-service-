@@ -1,0 +1,19 @@
+{
+    "listeners": {
+        "*:8006": {
+            "pass": "applications/tremor"
+        }
+    },
+
+    "applications": {
+        "tremor": {
+            "type": "python 3.6",
+            "user": "unit_user",
+            "group": "unit_group",
+            "path": "/home/app/tremor/",
+            "home": "/home/app/tremor/venvTremor/",
+            "module": "wsgi"
+        }
+    }
+}
+
