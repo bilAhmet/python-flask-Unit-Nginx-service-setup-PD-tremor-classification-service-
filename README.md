@@ -1,10 +1,10 @@
 # python-flask-Unit-Nginx-service-setup-PD-tremor-classification-service-
 
 
-#Steps of service setup [Python, ubuntu server, Nginx, Unit, Flask]
+# Steps of service setup [Python, ubuntu server, Nginx, Unit, Flask]
 
 
-      ##Required for downloading in the virtual environment: these python libraries:
+      ## Required for downloading in the virtual environment: these python libraries:
     • Flask 1.1.2
     • flask_cors 3.0.9
     • numpy 1.18.5
@@ -15,11 +15,11 @@
     • tensorflow 1.13.1, pip install tensorflow==1.13.1
     • sklearn 0.23.2
 
-##how to proceed
-###install Unit; steps in the link below :
+## how to proceed
+### install Unit; steps in the link below :
 https://unit.nginx.org/installation/#ubuntu_1804
 
-###In console:
+### In console:
 
 ```bash
  cd /path/to/app/
@@ -34,14 +34,14 @@ source  name_of_venv/bin/activate
 ```
 
 
-###Put the wsgi.py and all required project files in the app path
+### Put the wsgi.py and all required project files in the app path
 
 ### Set installation path permissions to secure access, for example:
 ```bash
 chown -R unit_user:unit_group /path/to/app/
 ```
 
-###create config.json in the app path and fill the below in it:
+### create config.json in the app path and fill the below in it:
 ```json
 {
     "listeners": {
@@ -63,23 +63,23 @@ chown -R unit_user:unit_group /path/to/app/
 }
 ```
 
-* Upload the updated configuration:
+### Upload the updated configuration:
 ```bash
 sudo curl -X PUT --data-binary @config.json --unix-socket  /var/run/control.unit.sock http://localhost/config/
 ```
 
-###Verify the port:
+### Verify the port:
 ```bash
 sudo ufw allow  (port_number)
 ```
 
-*For restarting services of Unit:
+### For restarting services of Unit:
 ```bash
 systemctl restart unit.service
 ```
 
 
-for log information:
+### For log information:
 ```bash
 sudo more /var/log/unit.log
 ```
