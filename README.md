@@ -4,7 +4,8 @@
 
 #python #flask #Unit#Nginx #service-setup #Parkinson #tremor #classification-service-
 
-## Required for downloading in the virtual environment: these python libraries:
+## Required for downloading in the virtual environment:
+The following python libraries:
     • Flask 1.1.2
     • flask_cors 3.0.9
     • numpy 1.18.5
