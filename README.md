@@ -12,7 +12,10 @@
     • pandas 1.1.3
     • scipy 1.5.2
     • datetime
-    • tensorflow 1.13.1, pip install tensorflow==1.13.1
+    • tensorflow 1.13.1, 
+    ```bash
+    pip install tensorflow==1.13.1
+    ```
     • sklearn 0.23.2
 
 ## how to proceed
